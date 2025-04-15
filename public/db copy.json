@@ -1,0 +1,260 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "title": "javascript",
+      "themes": {
+        "common": [
+          "loops",
+          "if else",
+          "switch",
+          "logical operators",
+          "conditional operators",
+          "hosting",
+          "for .. of",
+          "for .. in"
+        ],
+        "objects": {
+          "themes": {
+            "common": [
+              "Set / Get / delete object properties/ methods",
+              "Set / Get object keys",
+              "For .. In cycle",
+              "Ways to create object",
+              "reference types"
+            ],
+            "garbageCollector": [
+              "What is a garbage Collector?",
+              "Why do we need it?"
+            ]
+          }
+        },
+        "dataTypes": {
+          "themes": {
+            "common": [
+              "List of types",
+              "data types(null undefined), difference"
+            ],
+            "DateTime": ["methods"],
+            "JSON": ["Clone objects with JSON methods"]
+          }
+        },
+        "functions": {
+          "themes": {
+            "common": [
+              "Immidiately-invoked function expressions",
+              "Types of functions"
+            ],
+            "ExecutionContext": [
+              "methods",
+              "'this' definition",
+              "ways to bind this to the function",
+              "Global context(window)",
+              "context loosing"
+            ]
+          }
+        },
+        "prototypes": [
+          "loops",
+          "'__proto__' and protorype properties",
+          "chain of prototypes",
+          "create object with prototype",
+          "get and set object prototype"
+        ],
+        "asyncProgramming": {
+          "themes": {
+            "eventLoop": ["principle of working?", "order of tasks, sync code"],
+            "scheduling": [
+              "setTimeout, setInterval",
+              "Why do we need them?",
+              "Clear timeouts and intervals"
+            ],
+            "promise": [
+              "Promises",
+              "States of Promises",
+              "Exceptions/error handling",
+              "catch"
+            ],
+            "asyncAwait": [
+              "Examples of async functions",
+              "Exceptions/error handling"
+            ]
+          }
+        },
+        "network": ["REST", "CORS", "Websockets", "HTTP methods"],
+        "regExp": ["Syntax", "Methods"],
+        "classes": [
+          "Basic syntax",
+          "Inheritance",
+          "Private and protected properties and methods"
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "title": "react",
+      "themes": {
+        "JSX": {
+          "themes": {
+            "render": ["Why and how do we use ReactDOM library"],
+            "jsxLessReact": [
+              "Why do we import react if we don't use it",
+              "Note: question is about old react version (before 17th version)"
+            ]
+          }
+        },
+        "reconciliation": {
+          "themes": {
+            "fiber": [
+              "What is 'Fiber' in react library",
+              "Explain how this algorithm works in own words"
+            ],
+            "jobs": [
+              "A basic understanding of how prioritization works in react"
+            ]
+          }
+        },
+        "components": {
+          "themes": {
+            "functionalComponents": [
+              "Know and understand at a basic level what functional components are for",
+              "How to work with state in functional components"
+            ],
+            "classComponents": [
+              "Ability to write a class component",
+              "Working with state",
+              "working with querries"
+            ],
+            "props": [
+              "Understanding what props are for",
+              "Why are they readonly",
+              "how to organize reverse data flow to parent"
+            ],
+            "state": [
+              "Working with state in class and functional components",
+              "Basic understanding of how setState works"
+            ],
+            "lifecycleMethods": [
+              "some lifecycle methods, maybe from class components?"
+            ],
+            "propsValidation": [
+              " How runtime typing works in react",
+              "default props",
+              "prop types"
+            ],
+            "pureComponent/memo": ["pureComponent/memo"],
+            "refs": ["Why do we need ref", "What is ref in react"],
+            "context": ["context"],
+            "portals": [
+              "Understanding and being able to explain in your own words what portals are used for in react"
+            ],
+            "patterns": ["Conditional render"]
+          }
+        },
+        "events": {
+          "themes": {
+            "jsxHandlers": [
+              "Understanding and being able to explain the difference between native handlers and handlers in react"
+            ],
+            "binding": [
+              "Understanding and the ability to explain how to not to lose context, etc."
+            ],
+            "syntheticEvent": ["What is SynteticEvent and what is it for"],
+            "eventTypes": [
+              "What are the types of events in react",
+              "What it is",
+              "Note: very briefly"
+            ],
+            "controlledComponents": [
+              "What is the difference between controlled and uncontrolled components",
+              "Understanding pros and cons",
+              "Ability to explain the essence in your own words"
+            ],
+            "forms": ["custom form implmentation"],
+            "bubblingReact": [
+              "Understanding how component bubbling works",
+              "explanation in your own words"
+            ]
+          }
+        },
+        "optimization": {
+          "themes": {
+            "virtualization": ["what is virtualization"],
+            "useMemo": ["useMemo", "useCallBack"],
+            "devtools": ["react devtools", "redux devtools"]
+          }
+        },
+        "testing": {
+          "themes": {
+            "testingTools": [
+              "What are jest and enzyme for",
+              "basic understanding of writing tests"
+            ],
+            "RTL": ["What is RTL", "basic understanding of writing tests"],
+            "testingTypes": [
+              "basic understanding of snapshot testing, why it can be used",
+              "component testing"
+            ]
+          }
+        },
+        "routing": {
+          "themes": {
+            "reactRouter": ["Knows how to work with react-router"],
+            "hooksRouting": ["hooks routing"],
+            "reactRouterApi": [
+              "basic understanding of API components: Route, Switch, Link"
+            ],
+            "browserApi": ["history, location, match"],
+            "connected": ["Connected react router"]
+          }
+        },
+        "serverInteraction": {
+          "themes": { "workingWithAPI": ["working with API"] }
+        },
+        "redux": {
+          "themes": {
+            "reduxMainPrinciples": [
+              "Understand and be able to explain in detail what Redux is for",
+              "Describe how it works",
+              "What entities are used in it"
+            ],
+            "HOCconnect": [
+              "Understanding what connect is for",
+              "What role does it play in the application architecture",
+              "Know and be able to tell about this HOC"
+            ],
+            "action": ["Confident understanding of actions as an entity"],
+            "reducers": [
+              "Basic understanding of the work of a reducer: what basic rules it must comply with",
+              "Confident writing if the reducer"
+            ],
+            "middlewares": ["Understanding the concept of middleware"],
+            "selectors": ["selectors"],
+            "reduxForm": ["How redux-forms works in react+redux ecosystem"]
+          }
+        },
+        "hooks": {
+          "themes": {
+            "whyHooks": [
+              "Wha the hooks in react",
+              "the ability to explain the benefits of hooks in your own words"
+            ],
+            "useEffect": [
+              "Understanding what lifecycle methods this hook can replace",
+              "What is the second argument for",
+              "How to unsubscribe from changes"
+            ],
+            "stateHooks": [
+              "Ability to work with basic hooks",
+              "Explain in your own words how useState and useReducer work",
+              "What paremeters are accepted",
+              "useState, useReducer, useContext"
+            ],
+            "customHooks": ["basic knowledge"],
+            "otherHooks": ["understanding what useRef is for"]
+          }
+        }
+      }
+    }
+  ]
+}
