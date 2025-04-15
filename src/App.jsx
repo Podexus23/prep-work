@@ -7,6 +7,11 @@ const URL = "http://localhost:3000";
 
 function App() {
   const [data, setData] = useState([]);
+  const [mainContent, setMainContent] = useState("hehe");
+
+  function handleMainContent(data) {
+    setMainContent(data);
+  }
 
   useEffect(function () {
     (async () => {
@@ -19,8 +24,8 @@ function App() {
   return (
     <div className="grid h-screen grid-cols-[auto_1fr] grid-rows-[auto_1fr]">
       <Header />
-      <Aside themesData={data} />
-      <Main />
+      <Aside themesData={data} onAddToMain={setMainContent} />
+      <Main>{mainContent}</Main>
     </div>
   );
 }

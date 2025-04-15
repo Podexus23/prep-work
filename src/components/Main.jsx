@@ -1,7 +1,7 @@
-export function Main() {
+export function Main({ children }) {
   return (
-    <main className="col-start-2 row-start-2 bg-slate-300">
-      Main content of chosen topic
+    <main className="col-start-2 row-start-2 flex items-center justify-center bg-slate-300">
+      {children}
     </main>
   );
 }
