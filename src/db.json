@@ -1,6 +1,129 @@
 {
   "data": [
     {
+      "id": "boostedJS",
+      "title": "JS",
+      "themes": {
+        "common": [
+          {
+            "title": "for Loop",
+            "description": "Creates a loop with three optional expressions (initialization, condition, increment)",
+            "code": "for (let i = 0; i < 5; i++) {\n  console.log(i); // 0, 1, 2, 3, 4\n}",
+            "tips": [
+              "Ideal when the number of iterations is known",
+              "The loop variable can be declared in the initialization"
+            ],
+            "warnings": [
+              "Semicolons between expressions are required",
+              "Using var instead of let makes the variable accessible outside the loop"
+            ]
+          },
+          {
+            "title": "while Loop",
+            "description": "Executes a block of code as long as the specified condition is true",
+            "code": "let i = 0;\nwhile (i < 5) {\n  console.log(i); // 0, 1, 2, 3, 4\n  i++;\n}",
+            "tips": [
+              "Use when the number of iterations is unknown",
+              "Ensure the condition eventually becomes false to avoid infinite loops"
+            ],
+            "warnings": [
+              "Forgetting to increment the counter will cause an infinite loop"
+            ]
+          },
+          {
+            "title": "if Condition",
+            "description": "Executes a block if a specified condition is true",
+            "code": "const age = 18;\nif (age >= 18) {\n  console.log(\"Adult\");\n} else {\n  console.log(\"Minor\");\n}",
+            "tips": [
+              "Use else if for multiple conditions",
+              "Conditions can be complex boolean expressions"
+            ],
+            "warnings": [
+              "Using assignment (=) instead of comparison (== or ===) is a common mistake"
+            ]
+          },
+          {
+            "title": "switch Statement",
+            "description": "Evaluates an expression and executes code blocks based on matching cases",
+            "code": "const day = \"Monday\";\nswitch (day) {\n  case \"Monday\":\n    console.log(\"Work day\");\n    break;\n  case \"Saturday\":\n    console.log(\"Weekend\");\n    break;\n  default:\n    console.log(\"Unknown day\");\n}",
+            "tips": [
+              "More readable than multiple if-else statements for exact value matching",
+              "The default case is optional"
+            ],
+            "warnings": [
+              "Missing break statements will cause fall-through to the next case",
+              "Case comparisons are strict (===)"
+            ]
+          },
+          {
+            "title": "Logical Operators",
+            "description": "Used to combine or invert boolean values",
+            "code": "// AND (&&)\ntrue && false  // false\n// OR (||)\ntrue || false  // true\n// NOT (!)\n!true          // false",
+            "tips": [
+              "Can be used for short-circuit evaluation",
+              "Use parentheses to clarify complex expressions"
+            ],
+            "warnings": [
+              "Non-boolean values will be coerced to boolean in evaluations",
+              "Operator precedence can lead to unexpected results"
+            ]
+          },
+          {
+            "title": "Ternary Operator",
+            "description": "Shorthand conditional operator that returns one of two values",
+            "code": "const age = 20;\nconst status = age >= 18 ? \"Adult\" : \"Minor\";",
+            "tips": [
+              "Great for simple conditional assignments",
+              "More concise than if-else for single expressions"
+            ],
+            "warnings": [
+              "Avoid nesting ternary operators as it reduces readability",
+              "Not a complete replacement for if-else statements"
+            ]
+          },
+          {
+            "title": "Hoisting",
+            "description": "JavaScript's behavior of moving declarations to the top of their scope",
+            "code": "console.log(x); // undefined\nvar x = 5;\n\nconsole.log(y); // ReferenceError\nlet y = 10;",
+            "tips": [
+              "Use let/const to avoid hoisting surprises",
+              "Function declarations are fully hoisted"
+            ],
+            "warnings": [
+              "var variables are hoisted but initialized as undefined",
+              "let/const are hoisted but not initialized (Temporal Dead Zone)"
+            ]
+          },
+          {
+            "title": "for...of Loop",
+            "description": "Creates a loop iterating over iterable objects (arrays, strings)",
+            "code": "const arr = [10, 20, 30];\nfor (const num of arr) {\n  console.log(num); // 10, 20, 30\n}",
+            "tips": [
+              "Simplifies array iteration compared to traditional for loops",
+              "Works with any iterable (Maps, Sets, etc.)"
+            ],
+            "warnings": [
+              "Cannot directly access the index (use entries() if needed)",
+              "Doesn't work with plain objects"
+            ]
+          },
+          {
+            "title": "for...in Loop",
+            "description": "Iterates over the enumerable properties of an object",
+            "code": "const obj = { a: 1, b: 2 };\nfor (const key in obj) {\n  console.log(key); // \"a\", \"b\"\n}",
+            "tips": [
+              "Use hasOwnProperty() to filter out prototype properties",
+              "Can be used with Object.keys() for safer iteration"
+            ],
+            "warnings": [
+              "Iterates over all enumerable properties including inherited ones",
+              "Array indices will be strings (\"0\", \"1\", etc.)"
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "javascript",
       "title": "javascript",
       "themes": {

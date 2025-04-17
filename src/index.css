@@ -1,1 +1,138 @@
 @import "tailwindcss";
+
+:root{
+  --aside-size: 30rem;
+}
+
+#answers-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Concept Card Styling */
+.concept {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border-left: 5px solid #4a6fa5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.concept:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Title Styling */
+.concept h2 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 0.5rem;
+}
+
+/* Description Text */
+.concept p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+/* Code Block Styling */
+.concept pre {
+  background: #f8f9fa;
+  padding: 1.2rem;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  border: 1px solid #e1e4e8;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.concept pre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #4a6fa5;
+  border-radius: 6px 0 0 6px;
+}
+
+/* Tips & Warnings Sections */
+.tips, .warnings {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.tips {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+}
+
+.warnings {
+  background-color: #ffebee;
+  border-left: 4px solid #f44336;
+}
+
+.tips p, .warnings p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Comparison Tables */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table th {
+  background: #4a6fa5;
+  color: white;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.comparison-table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.comparison-table tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.comparison-table tr:hover {
+  background: #f0f4f8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #answers-container {
+    padding: 1rem;
+  }
+  
+  .concept {
+    padding: 1.5rem;
+  }
+  
+  .concept h2 {
+    font-size: 1.5rem;
+  }
+}
+

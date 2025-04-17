@@ -7,11 +7,11 @@ const URL = "http://localhost:3000";
 
 function App() {
   const [data, setData] = useState([]);
-  const [mainContent, setMainContent] = useState("hehe");
+  const [mainContent, setMainContent] = useState(<p>hehe</p>);
 
-  function handleMainContent(data) {
-    setMainContent(data);
-  }
+  // function handleMainContent(data) {
+  //   setMainContent(data);
+  // }
 
   useEffect(function () {
     (async () => {
